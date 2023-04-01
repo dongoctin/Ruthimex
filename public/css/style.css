@@ -1,0 +1,320 @@
+
+
+.active {
+  background-color: #5d9c27 !important;
+	color: white !important;
+}
+
+label {
+	font-weight: normal;
+}
+nav a {
+	margin-left: 1px;
+	margin-right: 1px;
+  border-radius: 0 !important;
+  
+}
+
+footer {
+	background-color: grey;
+	color: white;
+	text-align: center;
+}
+
+label.error {
+color: red;
+font-size: 14px;
+
+}
+body {
+	overflow-x: hidden;
+  text-align: center;
+  
+	
+}
+	
+
+.search-form {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-text {
+	  
+	position: absolute;
+    top: 30%;
+    right: 0px;
+	width: 280px;
+	height: 30px;
+    margin-right: 80px;
+	border-radius: 5px;
+   
+  }
+  .language {
+	position: absolute;
+    top: 50%;
+    right: 0px;
+	width: 150px;
+	height: 30px;
+    
+  }
+
+  .language a {
+	display: inline-block;
+	margin-right: 10px; 
+}
+.head-email {
+	position: absolute;
+    top: 10%;
+    right: 0px;
+	width: 400px;
+	height: 40px;
+    
+  }
+
+  .head-email e {
+	  color: #fff
+  }
+
+  .search-pic {
+    display: block;
+    margin: 10px;
+  }
+
+  .foot_act p {
+    width: 50%; /* định nghĩa chiều rộng của div */
+    margin: auto; /* đặt margin auto để căn giữa div */
+    line-height: 1.5;
+    
+  }
+  .nav-links {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+  }
+
+  .nav-links > * {
+   
+    flex: 1;
+    text-align: center;
+    margin: 0;
+   
+  }
+
+  .nav-links a:hover
+ {
+  color: white;
+  background-color: #5d9c27;
+  height: 100%;
+  
+}
+
+  .nav-links .btn-info:not(#news, #capacityprofile) {
+    width: 193px;
+  } 
+  #news {
+  width: 157px;
+  
+
+}
+#capacityprofile {
+  width: 252px;
+} 
+
+i {
+  display: inline-block;
+}
+.btn.btn-info {
+  background-color: rgb(236, 230, 230);
+  color:black;
+  font-weight: bold; 
+  font-family: 'Times New Roman', Times, serif; 
+  border-color: white;
+}
+
+.dropdown-item{
+  border-bottom: 1px solid #CCC;
+}
+
+.dropdown-menu .dropdown-item {
+  position: relative; 
+  /* dropdown-item là cha của thẻ i. Nếu muốn chỉnh khoảng cách thẻ i cho nó ra sát lề thì phải dùng position: absolute, nhưng muốn dùng absolute thì cha nó phải là relative */
+}
+
+.fa {
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  color: black;
+  /* dưới này là các thao tác mượt hơn */
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.slick-slide img {
+ display: inline-block !important;
+}
+
+.slick-dots {
+  bottom: 20px !important;
+} 
+
+/* reset nút button qua lại */
+.slick-prev {
+  /* dùng để đặt nút button trên ảnh */
+  z-index: 1; 
+  left: 100px !important;
+  font-size: 100px;
+}
+.slick-next {
+  z-index: 1; 
+  /* z-index quan trọng */
+  right: 100px !important;
+}
+
+/* hiệu ứng chuyển ảnh bìa */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.slick-slide {
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.slick-active {
+  display: block;
+  opacity: 1;
+}
+
+
+
+/* khi rê chuột vô ảnh mới hiện nút chuyển trang */
+/* .slider-container {
+  position: relative;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.slick-slider:hover .slick-prev,
+.slick-slider:hover .slick-next {
+  display: block !important;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 0.7;
+} */
+
+.slider-container {
+  position: relative;
+}
+
+.slick-prev,
+.slick-next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.1s;
+}
+
+.slick-slider:hover .slick-prev,
+.slick-slider:hover .slick-next {
+  display: block;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 0.7;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+}
+
+.slick-dots li button {
+  background-color: #5d9c27;
+  border-color: #5d9c27;
+}
+.slick-dots li.slick-active {
+  background-color:#5d9c27 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
