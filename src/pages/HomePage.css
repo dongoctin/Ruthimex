@@ -1,0 +1,38 @@
+/* .homepage {
+    height: 500px;
+} */
+
+.theme {
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  .theme span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    padding-top: 9px;
+    text-align: center;
+  }
+
+  .settingshomepage {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .settingshomepage img {
+      width: 206px;
+      height: 140px;
+      padding: 10px;
+      margin-left: 10px;
+  }
+  
+  
+  
+  
+  

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { headerImages } from '../images/index';
+import { Images } from '../images/index';
 import { NavLink } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
+import './headerslider.css'
 import Slider from "react-slick";
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -29,7 +30,7 @@ export default function Header() {
         setShowDropdown3(!showDropdown3);
     };
 
-    let settings = {
+    let slider1Settings = {
         dots: true,
         customPaging: (i) => <button>{i + 1}</button>,
         infinite: true,
@@ -48,7 +49,7 @@ export default function Header() {
 
             <div className="search-form">
                 <form method="post" action="http://ruthimex.com.vn/search.html">
-                    <img type="image" className="search-pic" src={headerImages.headerImage1} />
+                    <img type="image" className="search-pic" src={Images.headerImage1} />
                     <input type="text" name="query" className=" form-control search-text" />
                     <div className="language">
                         <a href="#">
@@ -107,17 +108,19 @@ export default function Header() {
                 </Dropdown>
                 <NavLink className="btn btn-info" to="/contactus">CONTACT US</NavLink>
             </nav>
-            <Slider {...settings}>
-                <div>
-                    <img src={headerImages.headerImage2} alt="Trangchinh1" />
-                </div>
-                <div>
-                    <img src={headerImages.headerImage3} alt="Trangchinh2" />
-                </div>
-                <div>
-                    <img src={headerImages.headerImage4} alt="Trangchinh3" />
-                </div>
-            </Slider>
+            <div>
+                <Slider {...slider1Settings}>
+                    <div className='slider1Settings'>
+                        <img src={Images.headerImage2} alt="Trangchinh1" />
+                    </div>
+                    <div>
+                        <img src={Images.headerImage3} alt="Trangchinh2" />
+                    </div>
+                    <div>
+                        <img src={Images.headerImage4} alt="Trangchinh3" />
+                    </div>
+                </Slider>
+            </div>
         </div>
 
 

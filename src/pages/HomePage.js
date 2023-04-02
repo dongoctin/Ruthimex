@@ -1,13 +1,49 @@
 import React from 'react';
-import { headerImages } from '../images/index';
+import { Images } from '../images/index';
+import './HomePage.css'
+import Slider from "react-slick";
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+
+let settingshomepage = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1
+};
 
 export default function HomePage() {
     return (
-        <div>
-            <div>
+        <div className='homepage'>
+            <div className='homepagetheme'>
+                <div className="theme">
+                    <img src={Images.homepageImagestheme} alt="theme" />
+                    <span>CÔNG NGHỆ SẢN XUẤT</span>
 
-                HOME PAGE
+                </div>
+                {/* HOME PAGE */}
+            </div>
+            <div className='settingshomepage'>
+                <Slider {...settingshomepage}>
+                    <div>
+                        <img src={Images.homepageImage1} alt="homepageImage1" />
+                    </div>
+                    <div>
+                        <img src={Images.homepageImage2} alt="homepageImage2" />
+                    </div>
+                    <div>
+                        <img src={Images.homepageImage3} alt="homepageImage3" />
+                    </div>
+                    <div>
+                        <img src={Images.homepageImage4} alt="homepageImage4" />
+                    </div>
+                    <div>
+                        <img src={Images.homepageImage5} alt="homepageImage5" />
+                    </div>
+                </Slider>
             </div>
 
         </div>
