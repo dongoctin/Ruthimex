@@ -108,7 +108,7 @@ export default function Header() {
                 </Dropdown>
                 <NavLink className="btn btn-info" to="/contactus">CONTACT US</NavLink>
             </nav>
-            <div>
+            <div className='slider1Settings'>
                 <Slider {...slider1Settings}>
                     <div className='slider1Settings'>
                         <img src={Images.headerImage2} alt="Trangchinh1" />

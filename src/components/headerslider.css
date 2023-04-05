@@ -1,11 +1,16 @@
-
+/* reset css */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 .slick-slide img {
     display: inline-block !important;
    }
    
     .slick-dots {
-     bottom: 20px !important;
+     bottom: 10px !important;
    } 
    
    /* reset nút button qua lại */
@@ -47,6 +52,7 @@
      display: block;
      opacity: 1;
    }
+
    
    
    

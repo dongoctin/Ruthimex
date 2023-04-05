@@ -1,4 +1,9 @@
-
+/* reset css */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 .active {
   background-color: #5d9c27 !important;
