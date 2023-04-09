@@ -47,16 +47,16 @@ export default function Header() {
         <div className="web-head">
 
 
-            <div className="search-form">
+            <div className="head-banner">
                 <form method="post" action="http://ruthimex.com.vn/search.html">
-                    <img type="image" className="search-pic" src={Images.headerImage1} />
-                    <input type="text" name="query" className=" form-control search-text" />
+                    <img type="image" className="search-pic" src={Images.headerImage1} alt='headerImage1' />
+                    <input type="text" name="query" className=" search-text" />
                     <div className="language">
                         <a href="#">
-                            <img src="http://ruthimex.com.vn/themes/ruthimex/images/vn.png" />
+                            <img src={Images.headerImagevn} alt="vnflat" />
                         </a>
                         <a href="#">
-                            <img src="http://ruthimex.com.vn/themes/ruthimex/images/en.png" />
+                            <img src={Images.headerImageen} alt="enflat" />
                         </a>
                     </div>
                     <div className="head-email">

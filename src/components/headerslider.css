@@ -5,8 +5,141 @@
   box-sizing: border-box;
 }
 
+.web-head {
+  max-width: 1306px;
+  margin: 0 auto;
+  display: block;
+  
+}
+.head-banner{
+  
+  width: 1170px;
+  height: 120px;
+  position: relative;
+  margin: 0 auto;
+  
+}
+
+.head-email {
+	position: absolute;
+  top: 5%;
+  right: 0px;
+  margin-right: -20px;
+	width: 400px;
+	height: 40px;
+    
+  }
+
+  .head-email e {
+	  color: #fff
+  }
+
+
+.search-text {
+	  
+	  position: absolute;
+    top: 30%;
+	  width: 280px;
+	  height: 30px;
+    right: 0px;
+    margin-right: 20px;
+	  border-radius: 5px;
+    border: none;
+   
+  }
+
+  .language {
+    position: absolute;
+    top: 56%;
+    right: 0px;
+    margin-right: -60px; 
+    width: 150px;
+    height: 30px;  
+    }
+
+    .language a {
+    display: inline-block;
+    margin-right: 10px; 
+      }
+
+.search-pic {
+  display: block;
+ 
+}
+.nav-links {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 1170px;
+  margin: auto;
+}
+
+.nav-links > * {
+ 
+  flex: 1;
+  text-align: center;
+  margin: 0;
+ 
+}
+
+.nav-links a:hover
+{
+color: white;
+background-color: #5d9c27;
+height: 100%;
+
+}
+
+.nav-links .btn-info:not(#news, #capacityprofile) {
+  width: 193px;
+} 
+#news {
+width: 157px;
+
+
+}
+#capacityprofile {
+width: 252px;
+} 
+
+i {
+display: inline-block;
+}
+.btn.btn-info {
+background-color: rgb(236, 230, 230);
+color:black;
+font-weight: bold; 
+font-family: 'Times New Roman', Times, serif; 
+border-color: white;
+}
+
+.dropdown-item{
+border-bottom: 1px solid #CCC;
+}
+
+.dropdown-menu .dropdown-item {
+position: relative; 
+/* dropdown-item là cha của thẻ i. Nếu muốn chỉnh khoảng cách thẻ i cho nó ra sát lề thì phải dùng position: absolute, nhưng muốn dùng absolute thì cha nó phải là relative */
+}
+
+.fa {
+position: absolute;
+top: 8px;
+left: 2px;
+color: black;
+/* dưới này là các thao tác mượt hơn */
+-webkit-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+
+
 .slick-slide img {
-    display: inline-block !important;
+   
+    margin: 0px auto;
+    width: 1170px;
+    position: relative;
+    height: auto;
    }
    
     .slick-dots {
@@ -17,13 +150,13 @@
    .slick-prev {
      /* dùng để đặt nút button trên ảnh */
      z-index: 1; 
-     left: 100px !important;
+     left: 80px !important;
      font-size: 100px;
    }
    .slick-next {
      z-index: 1; 
      /* z-index quan trọng */
-     right: 100px !important;
+     right: 80px !important;
    }
    
    /* hiệu ứng chuyển ảnh bìa */

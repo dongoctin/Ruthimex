@@ -15,6 +15,8 @@
     position: relative;
     width: 100%;
     padding-top: 10px;
+    text-align: center;
+    align-items: center;
   }
   
   .theme span {
@@ -48,7 +50,7 @@
 
    .settingshomepage .slick-prev {
      
-     left: -20px !important;
+     left: -30px !important;
     
    }
 
@@ -63,10 +65,197 @@
     position: none;
   }
 
+  .settingshomepage .imga {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .homepagetech .slick-slide div span {
     color: #2a6496;
     font-weight: bold;
+    text-align: center;
+    align-items: center;
+   
+    
   }
+
+  .homepage-global-group {
+    width: 1170px !important; 
+    height: 680px !important; 
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 10px !important
+  }
+
+  .homepage-left{
+    width: 282px;
+    height: 680px;
+    float: left;
+    padding-left: 0px !important; 
+    padding-right: 0px !important;
+  
+  }
+  .block-global-1 {
+    width: 281px;
+    height: 145px;
+  
+  }
+
+  
+  .block-top-1 {
+    background-color:#7db942;
+    width: 278px;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 0 0;
+    padding-left: 15px;
+  }
+
+  .block-top-1 img {
+   margin-bottom: 3%;
+  }
+
+  .block-top-1 span {
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: tahoma;
+    margin-left: 10px;
+  }
+
+  .block-body-1 {
+    text-align: center;
+    
+  }
+  .block-body-1 img {
+    width: 260px;
+    height: 100px;
+  }
+
+  .block-global-2 {
+    margin-top: 30px;
+    width: 281px;
+    height: 245px;
+  
+  }
+
+  .block-body-2 img {
+    width: 278px;
+    height: 200px;
+
+  }
+
+
+  .block-global-3 {
+    margin-top: 30px;
+    width: 278px;
+    height: 202px;
+    border: 1px solid grey;
+    
+  }
+  
+  
+  .my-list li {
+    padding: 5px 0; /* Khoảng cách dọc giữa các phần tử */
+    border-bottom: 0.5px solid rgb(218, 213, 213);
+    width: 90%; /* Chiều rộng của phần tử là 50% */
+    color: #428bca;
+   
+  }
+  .my-list li:last-child {
+    border-bottom: none; /* Không có đường dọc */ }
+
+ 
+/* -------------Right----------------- */
+    .homepage-right {
+      width: 850px;
+      height: 681px;
+      float: left;
+    }
+
+    .block-product-1 {
+      background-color:#7db942;
+      width: 820px;
+      height: 40px;
+      margin-bottom: 5px;
+      border-radius: 5px 5px 0 0;
+      padding-left: 15px;
+    }
+    .block-product-top-1 img {
+      margin-bottom: 1%;
+     }
+
+     .block-product-top-1 span {
+      color: white;
+      font-size: 15px;
+      line-height: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: tahoma;
+      margin-left: 10px;
+    }
+
+    /* chỉnh có viền tròn chỉnh 2 cái viền .home-dv-pic và ảnh img */
+   .home-dv-pic {
+   width: 252px;
+  height: 240px;
+  margin:  20px 0;
+  /* viền tròn */
+  border-radius: 50%; 
+  overflow: hidden;
+  /* cho phép ẩn phần của ảnh nằm ngoài vòng tròn */
+  border: 2px solid rgb(196, 190, 190);
+    }
+
+  .home-dv-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* sẽ điều chỉnh tỷ lệ khung hình của ảnh để nó vừa với kích thước của phần tử cha, đồng thời giữ nguyên tỷ lệ của ảnh. */ 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+  .home-dv-pic img:hover {
+      transform: scale(1.3);
+      
+  }  
+
+  .home-dv-title a {
+  text-decoration: none;
+  } 
+
+  .home-dv-title span {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #2a6496;
+    font-weight: bold;
+  } 
+  .owl-carousel .item {
+    margin: 0 5px;
+  }
+  
+  .owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+
+    /* Điều kiện cho màn hình md và lớn hơn */
+    @media (min-width: 992px) { 
+      .col-md-4 {
+        width: 33.33%;
+        float: left;
+      }
+    }
+    
+    
   
 
   

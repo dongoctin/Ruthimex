@@ -20,11 +20,20 @@ nav a {
   
 }
 
+.foot_act  {
+  text-align: center;
+  font-size: 13px;
+
+}
+
 footer {
 	background-color: grey;
 	color: white;
-	text-align: center;
+  text-align: center;
+  align-items: center;
+	
 }
+
 
 label.error {
 color: red;
@@ -39,128 +48,13 @@ body {
 }
 	
 
-.search-form {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .search-text {
-	  
-	position: absolute;
-    top: 30%;
-    right: 0px;
-	width: 280px;
-	height: 30px;
-    margin-right: 80px;
-	border-radius: 5px;
-   
-  }
-  .language {
-	position: absolute;
-    top: 50%;
-    right: 0px;
-	width: 150px;
-	height: 30px;
-    
-  }
-
-  .language a {
-	display: inline-block;
-	margin-right: 10px; 
-}
-.head-email {
-	position: absolute;
-    top: 10%;
-    right: 0px;
-	width: 400px;
-	height: 40px;
-    
-  }
-
-  .head-email e {
-	  color: #fff
-  }
-
-  .search-pic {
-    display: block;
-    margin: 10px;
-  }
-
   .foot_act p {
     width: 50%; /* định nghĩa chiều rộng của div */
     margin: auto; /* đặt margin auto để căn giữa div */
     line-height: 1.5;
     
   }
-  .nav-links {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    width: 1170px;
-    margin: auto;
-  }
-
-  .nav-links > * {
-   
-    flex: 1;
-    text-align: center;
-    margin: 0;
-   
-  }
-
-  .nav-links a:hover
- {
-  color: white;
-  background-color: #5d9c27;
-  height: 100%;
-  
-}
-
-  .nav-links .btn-info:not(#news, #capacityprofile) {
-    width: 193px;
-  } 
-  #news {
-  width: 157px;
-  
-
-}
-#capacityprofile {
-  width: 252px;
-} 
-
-i {
-  display: inline-block;
-}
-.btn.btn-info {
-  background-color: rgb(236, 230, 230);
-  color:black;
-  font-weight: bold; 
-  font-family: 'Times New Roman', Times, serif; 
-  border-color: white;
-}
-
-.dropdown-item{
-  border-bottom: 1px solid #CCC;
-}
-
-.dropdown-menu .dropdown-item {
-  position: relative; 
-  /* dropdown-item là cha của thẻ i. Nếu muốn chỉnh khoảng cách thẻ i cho nó ra sát lề thì phải dùng position: absolute, nhưng muốn dùng absolute thì cha nó phải là relative */
-}
-
-.fa {
-  position: absolute;
-  top: 8px;
-  left: 2px;
-  color: black;
-  /* dưới này là các thao tác mượt hơn */
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
+ 
 
 
 
