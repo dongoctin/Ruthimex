@@ -38,7 +38,7 @@ export default function Header() {
         speed: 5000,
         autoplay: true,
         autoplaySpeed: 5000,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: true // Tạm dừng khi rê chuột vào slider
     };
@@ -71,39 +71,38 @@ export default function Header() {
                 <Dropdown show={showDropdown} onMouseEnter={handleDropdownClick} onMouseLeave={handleDropdownClick}>
                     <NavLink className="btn btn-info" to="/aboutus">ABOUT US</NavLink>
                     <Dropdown.Menu >
-                        <Dropdown.Item href="#/action-1"> <i class="fa fa-chevron-right"></i> Core Value </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2"><i class="fa fa-chevron-right"></i> Management Team</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3"> <i class="fa fa-chevron-right"></i> History</Dropdown.Item>
-                        <Dropdown.Item href="#/action-4" > <i class="fa fa-chevron-right"></i> Branch Systems</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1"> <i className="fa fa-chevron-right"></i> Core Value </Dropdown.Item>
+                        <Dropdown.Item href="#/action-2"><i className="fa fa-chevron-right"></i> Management Team</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3"> <i className="fa fa-chevron-right"></i> History</Dropdown.Item>
+                        <Dropdown.Item href="#/action-4" > <i className="fa fa-chevron-right"></i> Branch Systems</Dropdown.Item>
                     </Dropdown.Menu >
                 </Dropdown>
                 <Dropdown show={showDropdown1} onMouseEnter={handleDropdownClick1} onMouseLeave={handleDropdownClick1}>
                     <NavLink className="btn btn-info" to="/products">PRODUCTS</NavLink>
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1"> <i class="fa fa-chevron-right"></i> Construction and Minerals </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2"><i class="fa fa-chevron-right"></i> Auto and Moto</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3"><i class="fa fa-chevron-right"></i> Power electronics</Dropdown.Item>
-                        <Dropdown.Item href="#/action-4"><i class="fa fa-chevron-right"></i> Water supply</Dropdown.Item>
-                        <Dropdown.Item href="#/action-5"><i class="fa fa-chevron-right"></i>  Mechanical</Dropdown.Item>
-                        <Dropdown.Item href="#/action-6"><i class="fa fa-chevron-right"></i>  Consumer products</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1"> <i className="fa fa-chevron-right"></i> Construction and Minerals </Dropdown.Item>
+                        <Dropdown.Item href="#/action-2"><i className="fa fa-chevron-right"></i> Auto and Moto</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3"><i className="fa fa-chevron-right"></i> Power electronics</Dropdown.Item>
+                        <Dropdown.Item href="#/action-4"><i className="fa fa-chevron-right"></i> Water supply</Dropdown.Item>
+                        <Dropdown.Item href="#/action-5"><i className="fa fa-chevron-right"></i>  Mechanical</Dropdown.Item>
+                        <Dropdown.Item href="#/action-6"><i className="fa fa-chevron-right"></i>  Consumer products</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown show={showDropdown2} onMouseEnter={handleDropdownClick2} onMouseLeave={handleDropdownClick2}>
                     <NavLink className="btn btn-info" id='capacityprofile' to="/capacityprofile">CAPACITY PROFILE</NavLink>
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1"><i class="fa fa-chevron-right"></i>  Certificate </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2"><i class="fa fa-chevron-right"></i>  Awards</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3"><i class="fa fa-chevron-right"></i>  Facilities</Dropdown.Item>
-                        <Dropdown.Item href="#/action-4"><i class="fa fa-chevron-right"></i>  Production technology</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1"><i className="fa fa-chevron-right"></i>  Certificate </Dropdown.Item>
+                        <Dropdown.Item href="#/action-2"><i className="fa fa-chevron-right"></i>  Awards</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3"><i className="fa fa-chevron-right"></i>  Facilities</Dropdown.Item>
+                        <Dropdown.Item href="#/action-4"><i className="fa fa-chevron-right"></i>  Production technology</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown show={showDropdown3} onMouseEnter={handleDropdownClick3} onMouseLeave={handleDropdownClick3}>
                     <NavLink className="btn btn-info " id="news" to="/news">NEWS</NavLink>
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1"><i class="fa fa-chevron-right"></i> Local news </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2"><i class="fa fa-chevron-right"></i> Recruitment </Dropdown.Item>
-                        <Dropdown.Item href="#/action-3"><i class="fa fa-chevron-right"></i>  UNI0N activities</Dropdown.Item>
-                        <Dropdown.Item href="#/action-4"><i class="fa fa-chevron-right"></i>   Market news</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1"><i className="fa fa-chevron-right"></i> Local news </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3"><i className="fa fa-chevron-right"></i>  UNI0N activities</Dropdown.Item>
+                        <Dropdown.Item href="#/action-4"><i className="fa fa-chevron-right"></i>   Market news</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 <NavLink className="btn btn-info" to="/contactus">CONTACT US</NavLink>

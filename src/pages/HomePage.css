@@ -25,6 +25,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
+    font-weight: bold;
     padding-top: 9px;
     text-align: center;
   }
@@ -235,7 +236,7 @@
     color: #2a6496;
     font-weight: bold;
   } 
-  .owl-carousel .item {
+  /* .owl-carousel .item {
     margin: 0 5px;
   }
   
@@ -243,8 +244,29 @@
     display: block;
     width: 100%;
     height: auto;
+  } */
+
+  .homepagehotproducts .homepagetheme {
+    padding-top: 30px;
   }
 
+  .settingsproduct img {
+    width: 150px;
+    height: 150px;
+    margin: 10px; 
+} 
+.homepagehot {
+ padding-top: 20px;
+ 
+} 
+.settingsproduct {
+  border: 0.5px solid gray;
+  width: 1170px;
+  height: 170px;
+ left: 100px !important;
+ box-shadow: 2px 2px 2px 0px #70b043 ;
+
+}
 
 
     /* Điều kiện cho màn hình md và lớn hơn */

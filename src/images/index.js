@@ -23,6 +23,16 @@ export const Images = {
     homepageImagecapthoatnuoc: require('./homepageimages/capthoatnuoc.jpg'),
     homepageImagemaymoc: require('./homepageimages/maymoc.jpg'),
     homepageImagetieudung: require('./homepageimages/tieudung.jpg'),
+    homepageImagehotproduct1: require('./homepageimages/hotproduct1.jpg'),
+    homepageImagehotproduct2: require('./homepageimages/hotproduct2.jpg'),
+    homepageImagehotproduct3: require('./homepageimages/hotproduct3.jpg'),
+    homepageImagehotproduct4: require('./homepageimages/hotproduct4.jpg'),
+    homepageImagehotproduct5: require('./homepageimages/hotproduct5.jpg'),
+    homepageImagehotproduct6: require('./homepageimages/hotproduct6.jpg'),
+    homepageImagehotproduct7: require('./homepageimages/hotproduct7.jpg'),
+    homepageImagehotproduct8: require('./homepageimages/hotproduct8.jpg'),
+    homepageImagehotproduct9: require('./homepageimages/hotproduct9.jpg'),
+    homepageImagehotproduct10: require('./homepageimages/hotproduct10.jpg'),
 
 
 
