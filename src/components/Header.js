@@ -48,7 +48,7 @@ export default function Header() {
 
 
             <div className="head-banner">
-                <form method="post" action="http://ruthimex.com.vn/search.html">
+                <form method="post" action="#">
                     <img type="image" className="search-pic" src={Images.headerImage1} alt='headerImage1' />
                     <input type="text" name="query" className=" search-text" />
                     <div className="language">

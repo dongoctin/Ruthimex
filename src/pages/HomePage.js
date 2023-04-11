@@ -63,10 +63,6 @@ const settingsproduct = {
 };
 
 
-
-
-
-
 export default function HomePage() {
     return (
         <div className='homepage'>
@@ -109,7 +105,7 @@ export default function HomePage() {
                     </div>
                 </Slider>
             </div>
-            <Container className="homepage-global-group">
+            <div className="homepage-global-group">
                 <Col md={3} className='homepage-left'>
                     <div className='block-global-1'>
                         <div className='block-top-1'>
@@ -232,7 +228,7 @@ export default function HomePage() {
                         </Col>
                     </div>
                 </Col>
-            </Container>
+            </div>
             <div className="homepagehotproducts">
                 <div className='homepagetheme'>
                     <div className="theme">

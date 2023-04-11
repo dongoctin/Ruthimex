@@ -6,9 +6,9 @@
 }
 
 .web-head {
-  max-width: 1306px;
+ 
   margin: 0 auto;
-  display: block;
+ /* để canh thẻ div nằm chính giữa trang */
   
 }
 .head-banner{
@@ -64,6 +64,7 @@
 
 .search-pic {
   display: block;
+  width: 1170 px;
  
 }
 .nav-links {
@@ -72,6 +73,7 @@
   align-items: center;
   width: 1170px;
   margin: auto;
+  
 }
 
 .nav-links > * {
@@ -140,6 +142,7 @@ transition: all 0.4s ease;
     width: 1170px;
     position: relative;
     height: auto;
+    
    }
    
     .slick-dots {
@@ -150,13 +153,13 @@ transition: all 0.4s ease;
    .slick-prev {
      /* dùng để đặt nút button trên ảnh */
      z-index: 1; 
-     left: 80px !important;
+     left: 100px !important;
      font-size: 100px;
    }
    .slick-next {
      z-index: 1; 
      /* z-index quan trọng */
-     right: 80px !important;
+     right: 100px !important;
    }
    
    /* hiệu ứng chuyển ảnh bìa */
@@ -220,6 +223,7 @@ transition: all 0.4s ease;
    
    .slider-container {
      position: relative;
+     
    }
    
    .slick-prev,
@@ -231,7 +235,7 @@ transition: all 0.4s ease;
      z-index: 1;
      background-color: rgba(0, 0, 0, 0.3);
      color: white;
-     padding: 10px;
+     padding: 20px;
      cursor: pointer;
      transition: opacity 0.1s;
    }
