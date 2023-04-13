@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Col, Row } from 'react-bootstrap';
+import BackTopButton from '../components/BackTopButton';
 
 
 
@@ -272,7 +273,7 @@ export default function HomePage() {
                     </Slider>
                 </div>
             </div>
-
+            <BackTopButton />
 
 
         </div >
