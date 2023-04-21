@@ -5,7 +5,8 @@ function BackTopButton() {
 
     useEffect(() => {
         const toggleVisibility = () => {
-            if (window.pageYOffset > 200) {
+            console.log(window.pageYOffset)
+            if (window.pageYOffset > 500) {
                 setIsVisible(true);
             } else {
                 setIsVisible(false);

@@ -6,6 +6,7 @@ export const Images = {
     headerImage2: require('./header/trangchinh1.jpg'),
     headerImage3: require('./header/trangchinh2.jpg'),
     headerImage4: require('./header/trangchinh3.jpg'),
+    headerImage5: require('./header/mobi-head.png'),
 
     //homeppage
     homepageImagestheme: require('./homepageimages/theme.png'),

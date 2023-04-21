@@ -48,8 +48,45 @@ let settingshomepage = {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 4000,
+    arrows: false,
     nextArrow: < NextArrow />,
-    prevArrow: < PrevArrow />
+    prevArrow: < PrevArrow />,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false,
+                autoplay: false,
+                arrows: true,
+            }
+        },
+        {
+            breakpoint: 786,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: false,
+                arrows: true,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: false,
+                arrows: true,
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 };
 
 const settingsproduct = {
@@ -99,10 +136,6 @@ export default function HomePage() {
                     <div className="imga">
                         <img src={Images.homepageImage1} alt="homepageImage1" />
                         <span>THIẾT BỊ KIỂM TRA CHẤT LƯỢNG</span>
-                    </div>
-                    <div className="imga">
-                        <img src={Images.homepageImage2} alt="homepageImage2" />
-                        <span>PHÒNG THÍ NGHIỆM</span>
                     </div>
                 </Slider>
             </div>

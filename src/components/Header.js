@@ -7,6 +7,7 @@ import Slider from "react-slick";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Container, Col, Row } from 'react-bootstrap';
 
 export default function Header() {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -46,7 +47,43 @@ export default function Header() {
     return (
         <div className="web-head">
 
+            <div className="mobi mobi-head hidden-lg">
 
+                <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}>
+
+                    <div className="mobi-menu-text mobi-menu">Danh Mục</div>
+
+                </Col>
+                <Col xs={8} sm={8} className='mobi-center' style={{ padding: '0 0 0 15px' }}>
+
+                    <div className="mobi-search">
+                        <form method="post">
+                            <input className="form-control mobi-s-text" type="text" placeholder='Search' />
+                        </form>
+                    </div>
+
+                </Col>
+                <Col xs={2} sm={2} className='mobi-center'>
+
+                    <div className="mobi-language">
+                        <img src={Images.headerImageen} alt="enflat" />
+                    </div>
+
+                </Col>
+                <div class="clearfix"></div>
+                <div>
+
+                </div>
+            </div>
+            <Col xs={12} className="mobi-head-banner" >
+                <a href="#">
+                    <img type="image" className="search-pic" src={Images.headerImage5} alt='mobi-head' />
+                </a>
+
+            </Col>
+
+
+            {/* ..................................... */}
             <div className="head-banner">
                 <form method="post" action="#">
                     <img type="image" className="search-pic" src={Images.headerImage1} alt='headerImage1' />
@@ -66,6 +103,8 @@ export default function Header() {
                 </form>
 
             </div>
+
+            {/* .............................. */}
             <nav className="nav-links">
                 <NavLink className="btn btn-info" to="/homepage">HOME PAGE</NavLink>
                 <Dropdown show={showDropdown} onMouseEnter={handleDropdownClick} onMouseLeave={handleDropdownClick}>
