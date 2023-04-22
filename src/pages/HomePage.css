@@ -332,8 +332,13 @@
       overflow-x: hidden;
       text-align: center;
       
-      
     }
+    .homepage-left,
+    .homepagehotproducts {
+       display: none;
+    }
+
+
     .theme span {
       position: absolute;
       top: 50%;
