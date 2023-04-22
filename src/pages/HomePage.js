@@ -140,7 +140,7 @@ export default function HomePage() {
                 </Slider>
             </div>
             <div className="homepage-global-group">
-                <Col md={3} className='homepage-left'>
+                <Col lg={3} className='homepage-left'>
                     <div className='block-global-1'>
                         <div className='block-top-1'>
                             <img src={Images.homepageImageicon} alt="icon" />
@@ -174,7 +174,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </Col>
-                <Col md={9} className='homepage-right'>
+                <Col xs={12} sm={12} md={12} lg={9} className='homepage-right'>
                     <div className='block-product-1'>
                         <div className='block-product-top-1'>
                             <img src={Images.homepageImageicon} alt="icon" />
@@ -182,7 +182,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className='row-right'>
-                        <Col md={4} xs={6}>
+                        <Col md={4} xs={6} >
                             <div className="home-dv-pic">
                                 <a href="#">
                                     <img src={Images.homepageImagekhaikhoang} alt="khai khoang" />
@@ -222,7 +222,7 @@ export default function HomePage() {
                             </div>
                         </Col>
 
-                        <Col md={4} xs={6}>
+                        <Col md={4} xs={6} >
                             <div className="home-dv-pic">
                                 <a href="#">
                                     <img src={Images.homepageImagecapthoatnuoc} alt="cấp thoát nước" />
@@ -235,7 +235,7 @@ export default function HomePage() {
                             </div>
                         </Col>
 
-                        <Col md={4} xs={6}>
+                        <Col md={4} xs={6} >
                             <div className="home-dv-pic">
                                 <a href="#">
                                     <img src={Images.homepageImagemaymoc} alt="máy móc" />
@@ -248,7 +248,7 @@ export default function HomePage() {
                             </div>
                         </Col>
 
-                        <Col md={4} xs={6}>
+                        <Col md={4} xs={6} >
                             <div className="home-dv-pic">
                                 <a href="#">
                                     <img src={Images.homepageImagetieudung} alt="tiêu dùng" />

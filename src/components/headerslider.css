@@ -12,6 +12,7 @@
  /* để canh thẻ div nằm chính giữa trang */
   
 }
+
 @media (min-width: 992px) {
   .mobi-head, .mobi-head-banner {
     display: none;
@@ -77,7 +78,6 @@
   
 .head-banner{
   
-  width: 1170px;
   height: 120px;
   position: relative;
   margin: 0 auto;

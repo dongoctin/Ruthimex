@@ -6,6 +6,11 @@
   
 }
 
+body {
+	max-width: 1170px;
+	margin: 0 auto !important;
+}
+
 .active {
   background-color: #5d9c27 !important;
 	color: white !important;
