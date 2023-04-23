@@ -48,6 +48,9 @@ export default function Header() {
         <div className="web-head">
 
             <div className="mobi mobi-head hidden-lg">
+                <a className="mobi-phone" href="tel:0903361965">
+                    <img src={Images.headerImage6} alt="mobi-phone" />
+                </a>
 
                 <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}>
 

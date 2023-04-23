@@ -14,7 +14,7 @@
 }
 
 @media (min-width: 992px) {
-  .mobi-head, .mobi-head-banner {
+  .mobi-head, .mobi-head-banner, .mobi-phone {
     display: none;
   }
 }
@@ -23,6 +23,16 @@
   .head-banner .head-email,
   .head-banner .language, .nav-links, .head-banner, .slider1Settings {
     display: none !important;
+  }
+
+  .mobi-phone img {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 140px;
+    z-index: 2;
+
   }
 
   .mobi-head {

@@ -7,6 +7,7 @@ export const Images = {
     headerImage3: require('./header/trangchinh2.jpg'),
     headerImage4: require('./header/trangchinh3.jpg'),
     headerImage5: require('./header/mobi-head.png'),
+    headerImage6: require('./header/mobi-phone.gif'),
 
     //homeppage
     homepageImagestheme: require('./homepageimages/theme.png'),

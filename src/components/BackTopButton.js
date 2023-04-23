@@ -5,6 +5,7 @@ function BackTopButton() {
 
     useEffect(() => {
         const toggleVisibility = () => {
+
             console.log(window.pageYOffset)
             if (window.pageYOffset > 500) {
                 setIsVisible(true);
@@ -19,6 +20,7 @@ function BackTopButton() {
             window.removeEventListener('scroll', toggleVisibility);
         };
     }, []);
+
 
     const scrollToTop = () => {
         window.scrollTo({
