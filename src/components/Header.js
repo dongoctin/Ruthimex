@@ -58,7 +58,7 @@ export default function Header() {
 
                 <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}>
                     {/* <div className="mobi-menu-text mobi-menu">Danh Mục</div> */}
-                    <Dropdown className="mobi-sub-menu">
+                    <Dropdown>
                         <Dropdown.Toggle variant="success" id="dropdown-basic">
                             <i class="fa-solid fa-bars"></i>
                         </Dropdown.Toggle>

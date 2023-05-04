@@ -134,8 +134,8 @@ export default function HomePage() {
                         <span>CHẾ TẠO KHUÔN MẪU</span>
                     </div>
                     <div className="imga">
-                        <img src={Images.homepageImage1} alt="homepageImage1" />
-                        <span>THIẾT BỊ KIỂM TRA CHẤT LƯỢNG</span>
+                        <img src={Images.homepageImage2} alt="homepageImage2" />
+                        <span>PHÒNG THÍ NGHIỆM</span>
                     </div>
                 </Slider>
             </div>
