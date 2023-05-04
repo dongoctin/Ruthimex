@@ -62,18 +62,39 @@
    
 
   }
-  .mobi-menu-text {
-    color: #fff;
-    font-weight: bold;
-    font-size: 12px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    padding: 10px 10px !important;
+
+ .dropdown {
+   z-index: 2;
   
-    width: 60px;
-    
-    text-align: center;  
-  }
+  
+ }
+ #dropdown-basic {
+  border-radius: 50%;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: #87c140;
+  border: none;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+
+.sub-menu {
+  background: linear-gradient(to right bottom,#6cad44,#87c140);
+  position: absolute;
+ 
+}
+
+.sub-menu a{
+  display: block;
+  background-color: #87c140;
+  width: 100% !important;
+  
+}
+
+ 
   .mobi-center .head-banner-mobi img {
     width: 100%;
     padding: 0 !important;

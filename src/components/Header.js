@@ -7,10 +7,14 @@ import Slider from "react-slick";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row, nav } from 'react-bootstrap';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 export default function Header() {
+
     const [showDropdown, setShowDropdown] = useState(false);
+
+    const [showSubMenu, setShowSubMenu] = useState(false);
 
     const handleDropdownClick = () => {
         setShowDropdown(!showDropdown);
@@ -53,8 +57,21 @@ export default function Header() {
                 </a>
 
                 <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}>
+                    {/* <div className="mobi-menu-text mobi-menu">Danh Mục</div> */}
+                    <Dropdown className="mobi-sub-menu">
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            <i class="fa-solid fa-bars"></i>
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu className="sub-menu">
+                            <NavLink to="/homepage" >HOME PAGE</NavLink>
+                            <NavLink to="/aboutus">ABOUT US</NavLink>
+                            <NavLink to="/products">PRODUCTS</NavLink>
+                            <NavLink to="/capacityprofile">CAPACITY PROFILE</NavLink>
+                            <NavLink to="/news">NEWS</NavLink>
+                            <NavLink to="/contactus">CONTACT US</NavLink>
+                        </Dropdown.Menu>
+                    </Dropdown>
 
-                    <div className="mobi-menu-text mobi-menu">Danh Mục</div>
 
                 </Col>
                 <Col xs={8} sm={8} className='mobi-center' style={{ padding: '0 0 0 15px' }}>
@@ -162,7 +179,9 @@ export default function Header() {
                     </div>
                 </Slider>
             </div>
+
         </div>
+
 
 
     );
