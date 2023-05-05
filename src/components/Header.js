@@ -14,7 +14,8 @@ export default function Header() {
 
     const [showDropdown, setShowDropdown] = useState(false);
 
-    const [showSubMenu, setShowSubMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
+    const hideMenu = () => setShowMenu(!showMenu);
 
     const handleDropdownClick = () => {
         setShowDropdown(!showDropdown);
@@ -58,17 +59,17 @@ export default function Header() {
 
                 {/* <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}> */}
                 {/* <div className="mobi-menu-text mobi-menu">Danh Mục</div> */}
-                <Dropdown>
+                <Dropdown show={showMenu} onClick={hideMenu} >
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                         <i class="fa-solid fa-bars"></i>
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="sub-menu">
-                        <NavLink to="/homepage" ><i class="fa-solid fa-house"></i>HOME PAGE</NavLink>
-                        <NavLink to="/aboutus"><i class="fa-regular fa-id-card"></i> ABOUT US</NavLink>
-                        <NavLink to="/products"><i class="fa-brands fa-product-hunt"></i>PRODUCTS</NavLink>
-                        <NavLink to="/capacityprofile"><i class="fa-solid fa-paper-plane"></i>CAPACITY PROFILE</NavLink>
-                        <NavLink to="/news"><i class="fa-regular fa-newspaper"></i>NEWS</NavLink>
-                        <NavLink to="/contactus"><i class="fa-solid fa-envelope"></i>CONTACT US</NavLink>
+                        <NavLink to="/homepage" onClick={hideMenu}><i class="fa-solid fa-house"></i>HOME PAGE</NavLink>
+                        <NavLink to="/aboutus" onClick={hideMenu}><i class="fa-regular fa-id-card"></i> ABOUT US</NavLink>
+                        <NavLink to="/products" onClick={hideMenu}><i class="fa-brands fa-product-hunt"></i>PRODUCTS</NavLink>
+                        <NavLink to="/capacityprofile" onClick={hideMenu}><i class="fa-solid fa-paper-plane"></i>CAPACITY PROFILE</NavLink>
+                        <NavLink to="/news" onClick={hideMenu}><i class="fa-regular fa-newspaper"></i>NEWS</NavLink>
+                        <NavLink to="/contactus" onClick={hideMenu}><i class="fa-solid fa-envelope"></i>CONTACT US</NavLink>
                     </Dropdown.Menu>
                 </Dropdown>
 
