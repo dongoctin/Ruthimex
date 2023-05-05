@@ -56,24 +56,24 @@ export default function Header() {
                     <img src={Images.headerImage6} alt="mobi-phone" />
                 </a>
 
-                <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}>
-                    {/* <div className="mobi-menu-text mobi-menu">Danh Mục</div> */}
-                    <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            <i class="fa-solid fa-bars"></i>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu className="sub-menu">
-                            <NavLink to="/homepage" >HOME PAGE</NavLink>
-                            <NavLink to="/aboutus">ABOUT US</NavLink>
-                            <NavLink to="/products">PRODUCTS</NavLink>
-                            <NavLink to="/capacityprofile">CAPACITY PROFILE</NavLink>
-                            <NavLink to="/news">NEWS</NavLink>
-                            <NavLink to="/contactus">CONTACT US</NavLink>
-                        </Dropdown.Menu>
-                    </Dropdown>
+                {/* <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}> */}
+                {/* <div className="mobi-menu-text mobi-menu">Danh Mục</div> */}
+                <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                        <i class="fa-solid fa-bars"></i>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className="sub-menu">
+                        <NavLink to="/homepage" ><i class="fa-solid fa-house"></i>HOME PAGE</NavLink>
+                        <NavLink to="/aboutus"><i class="fa-regular fa-id-card"></i> ABOUT US</NavLink>
+                        <NavLink to="/products"><i class="fa-brands fa-product-hunt"></i>PRODUCTS</NavLink>
+                        <NavLink to="/capacityprofile"><i class="fa-solid fa-paper-plane"></i>CAPACITY PROFILE</NavLink>
+                        <NavLink to="/news"><i class="fa-regular fa-newspaper"></i>NEWS</NavLink>
+                        <NavLink to="/contactus"><i class="fa-solid fa-envelope"></i>CONTACT US</NavLink>
+                    </Dropdown.Menu>
+                </Dropdown>
 
 
-                </Col>
+                {/* </Col> */}
                 <Col xs={8} sm={8} className='mobi-center' style={{ padding: '0 0 0 15px' }}>
 
                     <div className="mobi-search">
@@ -180,7 +180,7 @@ export default function Header() {
                 </Slider>
             </div>
 
-        </div>
+        </div >
 
 
 
