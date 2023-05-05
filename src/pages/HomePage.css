@@ -218,7 +218,7 @@
 
     /* chỉnh có viền tròn chỉnh 2 cái viền .home-dv-pic và ảnh img */
    .home-dv-pic {
-  height: 240px;
+  /* height: 240px; nếu ảnh không chỉnh kích thước 250*230px này tự chỉnh ảnh bằng photoshop thì phải dùng này để ảnh tròn*/
   margin:  20px 0;
   /* viền tròn */
   border-radius: 50%; 
@@ -241,11 +241,12 @@
   }  
 
   .home-dv-title {
-    margin: 0 auto;
+    text-align: center;
   }
 
   .home-dv-title a {
   text-decoration: none;
+  
   } 
 
   .home-dv-title span {
