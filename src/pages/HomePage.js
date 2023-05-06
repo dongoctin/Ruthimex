@@ -184,13 +184,12 @@ export default function HomePage() {
                     <div className='row-right'>
                         <Col md={4} sm={6} xs={6} >
                             <div className="home-dv-pic">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); /* ngăn sự kiện scroll to black nhưng cũng ngăn sự kiện chuyển hướng nên phải dùng window.location.href="/aboutus" để chuyển hướng */ }}>
                                     <img src={Images.homepageImagekhaikhoang} alt="khai khoang" />
                                 </a>
-                                {/* <div class="overlay"></div> */}
                             </div>
                             <div className="home-dv-title">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); /* thêm mã xử lý tại đây */ }}>
                                     <span>XÂY DỰNG VÀ KHAI KHOÁNG</span>
                                 </a>
                             </div>
@@ -198,12 +197,12 @@ export default function HomePage() {
 
                         <Col md={4} sm={6} xs={6}>
                             <div className="home-dv-pic">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); /* thêm mã xử lý tại đây */ }}>
                                     <img src={Images.homepageImageoto} alt="ô tô" />
                                 </a>
                             </div>
                             <div className="home-dv-title">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); }} >
                                     <span>Ô TÔ - XE MÁY</span>
                                 </a>
                             </div>
@@ -211,12 +210,12 @@ export default function HomePage() {
 
                         <Col md={4} sm={6} xs={6}>
                             <div className="home-dv-pic">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); /* thêm mã xử lý tại đây */ }}>
                                     <img src={Images.homepageImagedientu} alt="điện tử" />
                                 </a>
                             </div>
                             <div className="home-dv-title">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); }} >
                                     <span>ĐIỆN - ĐIỆN TỬ</span>
                                 </a>
                             </div>
@@ -224,12 +223,12 @@ export default function HomePage() {
 
                         <Col md={4} sm={6} xs={6} >
                             <div className="home-dv-pic">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); /* thêm mã xử lý tại đây */ }}>
                                     <img src={Images.homepageImagecapthoatnuoc} alt="cấp thoát nước" />
                                 </a>
                             </div>
                             <div className="home-dv-title">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); }} >
                                     <span>CẤP THOÁT NƯỚC</span>
                                 </a>
                             </div>
@@ -237,12 +236,12 @@ export default function HomePage() {
 
                         <Col md={4} sm={6} xs={6} >
                             <div className="home-dv-pic">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); /* thêm mã xử lý tại đây */ }}>
                                     <img src={Images.homepageImagemaymoc} alt="máy móc" />
                                 </a>
                             </div>
                             <div className="home-dv-title">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); }}>
                                     <span>MÁY MÓC - THIẾT BỊ</span>
                                 </a>
                             </div>
@@ -250,11 +249,11 @@ export default function HomePage() {
 
                         <Col md={4} sm={6} xs={6} >
                             <div className="home-dv-pic">
-                                <a href="#">
+                                <a href="#" onClick={(e) => { e.preventDefault(); }} >
                                     <img src={Images.homepageImagetieudung} alt="tiêu dùng" />
                                 </a>
                             </div>
-                            <div className="home-dv-title">
+                            <div className="home-dv-title" onClick={(e) => { e.preventDefault(); }}>
                                 <a href="#">
                                     <span> SẢN PHẨM TIÊU DÙNG</span>
                                 </a>
