@@ -184,7 +184,8 @@ export default function HomePage() {
                     <div className='row-right'>
                         <Col md={4} sm={6} xs={6} >
                             <div className="home-dv-pic">
-                                <a href="#" onClick={(e) => { e.preventDefault(); /* ngăn sự kiện scroll to black nhưng cũng ngăn sự kiện chuyển hướng nên phải dùng window.location.href="/aboutus" để chuyển hướng */ }}>
+                                <a href="#" onClick={(e) => { e.preventDefault(); }}>
+                                    {/* ngăn sự kiện scroll to black nhưng cũng ngăn sự kiện chuyển hướng nên phải dùng window.location.href="/aboutus" để chuyển hướng  */}
                                     <img src={Images.homepageImagekhaikhoang} alt="khai khoang" />
                                 </a>
                             </div>
