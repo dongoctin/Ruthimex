@@ -36,6 +36,15 @@ export const Images = {
     homepageImagehotproduct9: require('./homepageimages/hotproduct9.jpg'),
     homepageImagehotproduct10: require('./homepageimages/hotproduct10.jpg'),
 
+    //aboutus
+    aboutusImage01: require('./aboutus/home-active.png'),
+    aboutusImage02: require('./aboutus/icon-lienquan.png'),
+    aboutusImage03: require('./aboutus/banner_firma.jpg'),
+    aboutusImage04: require('./aboutus/dien va dien dien tu1.jpg'),
+
+
+
+
 
 
 

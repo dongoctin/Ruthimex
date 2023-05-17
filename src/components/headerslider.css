@@ -242,6 +242,18 @@ position: relative;
 /* dropdown-item là cha của thẻ i. Nếu muốn chỉnh khoảng cách thẻ i cho nó ra sát lề thì phải dùng position: absolute, nhưng muốn dùng absolute thì cha nó phải là relative */
 }
 
+.about-us-1 {
+  background-color: #CCC;
+}
+
+
+nav a {
+  margin-left: 1px;
+  margin-right: 1px;
+  border-radius: 0 !important;
+  display: block;
+  padding-left: 20px;
+}
 .fa {
 position: absolute;
 top: 8px;
@@ -258,7 +270,7 @@ transition: all 0.4s ease;
    
     margin: 0px auto;
     position: relative;
-    height: auto;
+    height: 100%;
     
    }
    

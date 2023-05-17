@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Col, Row } from 'react-bootstrap';
-import BackTopButton from '../components/BackTopButton';
+
 
 
 
@@ -263,51 +263,6 @@ export default function HomePage() {
                     </div>
                 </Col>
             </div>
-            <div className="homepagehotproducts">
-                <div className='homepagetheme'>
-                    <div className="theme">
-                        <img src={Images.homepageImagestheme} alt="theme" />
-                        <span>SẢN PHẨM TIÊU BIỂU</span>
-
-                    </div>
-                </div>
-                <div className='homepagehot'>
-                    <Slider {...settingsproduct} className='settingsproduct'>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct1} alt="Imagehotproduct1" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct2} alt="Imagehotproduct2" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct3} alt="Imagehotproduct3" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct4} alt="Imagehotproduct4" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct5} alt="Imagehotproduct5" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct6} alt="Imagehotproduct6" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct7} alt="Imagehotproduct7" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct8} alt="Imagehotproduct8" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct9} alt="Imagehotproduct9" />
-                        </div>
-                        <div className="imgahot">
-                            <img src={Images.homepageImagehotproduct10} alt="Imagehotproduct10" />
-                        </div>
-                    </Slider>
-                </div>
-            </div>
-            <BackTopButton />
-
 
         </div >
 

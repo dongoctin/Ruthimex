@@ -58,7 +58,7 @@ export default function Header() {
                 </a>
 
                 {/* <Col xs={2} sm={2} className='mobi-center' style={{ padding: '0 7px' }}> */}
-                {/* <div className="mobi-menu-text mobi-menu">Danh Mục</div> */}
+
                 <Dropdown show={showMenu} onClick={hideMenu} >
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                         <i class="fa-solid fa-bars"></i>
@@ -129,12 +129,12 @@ export default function Header() {
             <nav className="nav-links">
                 <NavLink className="btn btn-info" to="/homepage">HOME PAGE</NavLink>
                 <Dropdown show={showDropdown} onMouseEnter={handleDropdownClick} onMouseLeave={handleDropdownClick}>
-                    <NavLink className="btn btn-info" to="/aboutus">ABOUT US</NavLink>
+                    <NavLink className="btn btn-info" >ABOUT US</NavLink>
                     <Dropdown.Menu >
-                        <Dropdown.Item href="#/action-1"> <i className="fa fa-chevron-right"></i> Core Value </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2"><i className="fa fa-chevron-right"></i> Management Team</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3"> <i className="fa fa-chevron-right"></i> History</Dropdown.Item>
-                        <Dropdown.Item href="#/action-4" > <i className="fa fa-chevron-right"></i> Branch Systems</Dropdown.Item>
+                        <NavLink to="/aboutus/corevalue" className="dropdown-item about-us-1"> <i className="fa fa-chevron-right"></i> Core Value </NavLink>
+                        <NavLink to="aboutus/managerteam" className="dropdown-item"><i className="fa fa-chevron-right"></i> Management Team</NavLink>
+                        <NavLink to="aboutus/history" className="dropdown-item"> <i className="fa fa-chevron-right"></i> History</NavLink>
+                        <NavLink to="aboutus/branchsystems" className="dropdown-item" > <i className="fa fa-chevron-right"></i> Branch Systems</NavLink>
                     </Dropdown.Menu >
                 </Dropdown>
                 <Dropdown show={showDropdown1} onMouseEnter={handleDropdownClick1} onMouseLeave={handleDropdownClick1}>
