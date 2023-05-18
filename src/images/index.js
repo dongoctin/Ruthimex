@@ -42,6 +42,11 @@ export const Images = {
     aboutusImage03: require('./aboutus/banner_firma.jpg'),
     aboutusImage04: require('./aboutus/dien va dien dien tu1.jpg'),
 
+    // managerteam
+    aboutusImage05: require('./aboutus/đnql.jpg'),
+    // history
+    aboutusImage06: require('./aboutus/lichsuhinhthanh.jpg'),
+
 
 
 
