@@ -17,7 +17,7 @@ export default function CoreValue() {
                     <span>Về chúng tôi</span>
                 </a>
                 <img src={Images.aboutusImage02} alt="icon-lienquan" />
-                <a to="/aboutus/corevalue">
+                <a to="/aboutus/managerteam">
                     <span>Đội ngũ quản lý</span>
                 </a>
                 <img src={Images.aboutusImage02} alt="icon-lienquan" />
