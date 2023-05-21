@@ -21,9 +21,10 @@ export default function Header() {
     // const hideMenu1 = () => setShowMenu1(!showMenu1);
     const [showMenu1, setShowMenu1] = useState(false);
 
-    const toggleMenu1 = () => {
+    const toggleMenu1 = (e) => {
+        e.stopPropagation(); // Ngăn chặn sự kiện click lan tỏa đến menu chính và ẩn nó
         setShowMenu1(!showMenu1);
-    }
+    };
 
 
     const handleDropdownClick = () => {
