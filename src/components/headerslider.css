@@ -63,7 +63,7 @@
    
 
   }
-
+  
  .dropdown {
    z-index: 2;
    position: absolute;
@@ -72,12 +72,13 @@
    align-items: center;
   
  }
- #dropdown-basic {
+ .dropdown #dropdown-basic {
   border-radius: 50%;
   font-size: 16px;
   margin: 0 auto;
   background-color: #87c140;
   border: none;
+ 
  
 }
 
@@ -114,6 +115,44 @@
   margin-right: 10px;
   padding-bottom: 10px;
 }
+ul.sub-menu-aboutus {
+  background-color:  #5d9c27;
+  color: black;
+  display: none;
+}
+
+ul.sub-menu-aboutus.show {
+  display: block; /* Hiển thị danh sách khi có class "show" */
+}
+
+.sub-menu-aboutus li {
+  border-top: 1px solid rgb(175, 167, 167);
+}
+.sub-menu i,
+.sub-menu span,
+.sub-menu-aboutus li span {
+  color: black;
+}
+.sub-menu-aboutus li {
+  list-style:none;
+}
+
+ul.sub-menu-aboutus li:last-child {
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+.dropdown-mobi-aboutus i,
+.dropdown-mobi-aboutus span {
+  margin-right: 5px;
+}
+
 
  
   .mobi-center .head-banner-mobi img {
@@ -190,8 +229,17 @@
   /* justify-content: space-between; */
   align-items: center;
   width: 1170px;
+  max-width: 100%;
   margin: auto;
   
+}
+
+.nav-links .dropdown {
+  flex-grow: 1;
+}
+
+.nav-links .dropdown:nth-child(4) {
+  flex-basis: 8%;
 }
 
 .nav-links > * {
@@ -211,15 +259,15 @@ height: 100%;
 }
 
 .nav-links .btn-info:not(#news, #capacityprofile) {
-  width: 193px;
+  width: 100%;
 } 
 #news {
-width: 157px;
-
+width:100%;
 
 }
+
 #capacityprofile {
-width: 252px;
+width:100%;
 } 
 
 i {

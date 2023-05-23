@@ -17,15 +17,6 @@ export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
     const hideMenu = () => setShowMenu(!showMenu);
 
-    // const [showMenu1, setShowMenu1] = useState(false);
-    // const hideMenu1 = () => setShowMenu1(!showMenu1);
-    const [showMenu1, setShowMenu1] = useState(false);
-
-    const toggleMenu1 = (e) => {
-        e.stopPropagation(); // Ngăn chặn sự kiện click lan tỏa đến menu chính và ẩn nó
-        setShowMenu1(!showMenu1);
-    };
-
 
     const handleDropdownClick = () => {
         setShowDropdown(!showDropdown);
@@ -45,6 +36,13 @@ export default function Header() {
     const handleDropdownClick3 = () => {
         setShowDropdown3(!showDropdown3);
     };
+
+    function handleAboutUsClick(e) {
+        const subMenu = document.querySelector('.sub-menu-aboutus');
+        e.stopPropagation(); // Ngăn chặn sự kiện click lan tỏa đến menu chính và ẩn nó
+        subMenu.classList.toggle('show');
+
+    }
 
     let slider1Settings = {
         dots: true,
@@ -75,18 +73,22 @@ export default function Header() {
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="sub-menu">
                         <NavLink to="/homepage" onClick={hideMenu}><i class="fa-solid fa-house"></i>HOME PAGE</NavLink>
-                        {/* <NavLink to="/aboutus" onClick={hideMenu1}><i class="fa-regular fa-id-card"></i> ABOUT US</NavLink> */}
-                        <Dropdown show={showMenu1} onClick={toggleMenu1}  >
-                            <Dropdown.Toggle variant="success" id="dropdown-basic" >
-                                <i class="fa-regular fa-id-card"></i> <button>ABOUT US</button>
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu className="sub-menu-aboutus" show={showMenu1}>
-                                <NavLink to="/additional-link1" onClick={toggleMenu1}><i className="fa-solid fa-link"></i> Additional Link 1</NavLink>
-                                <NavLink to="/additional-link2" onClick={toggleMenu1}><i className="fa-solid fa-link"></i> Additional Link 2</NavLink>
-                                <NavLink to="/additional-link3" onClick={toggleMenu1}><i className="fa-solid fa-link"></i> Additional Link 3</NavLink>
-                            </Dropdown.Menu>
-
-                        </Dropdown>
+                        <NavLink to="/homepage" onClick={handleAboutUsClick}><i class=" fa-regular fa-id-card"></i> <span>ABOUT US</span>
+                            <ul className='sub-menu-aboutus'>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="/aboutus/corevalue"><i class="fa-solid fa-snowflake"></i> <span>CORE VALUE</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="aboutus/managerteam"><i class="fa-solid fa-snowflake"></i> <span>MANAGEMENT TEAM</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="aboutus/history"><i class="fa-solid fa-snowflake"></i><span>HISTORY</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="aboutus/branchsystems"><i class="fa-solid fa-snowflake"></i><span>BRANCH SYSTEMS</span></NavLink>
+                                </li>
+                            </ul>
+                        </NavLink>
                         <NavLink to="/products" onClick={hideMenu}><i class="fa-brands fa-product-hunt"></i>PRODUCTS</NavLink>
                         <NavLink to="/capacityprofile" onClick={hideMenu}><i class="fa-solid fa-paper-plane"></i>CAPACITY PROFILE</NavLink>
                         <NavLink to="/news" onClick={hideMenu}><i class="fa-regular fa-newspaper"></i>NEWS</NavLink>
@@ -116,7 +118,7 @@ export default function Header() {
                 <div>
 
                 </div>
-            </div>
+            </div >
             <Col xs={12} className="mobi-head-banner" >
                 <a href="#">
                     <img type="image" className="search-pic" src={Images.headerImage5} alt='mobi-head' />
@@ -150,7 +152,7 @@ export default function Header() {
             <nav className="nav-links">
                 <NavLink className="btn btn-info" to="/homepage">HOME PAGE</NavLink>
                 <Dropdown show={showDropdown} onMouseEnter={handleDropdownClick} onMouseLeave={handleDropdownClick}>
-                    <NavLink className="btn btn-info" >ABOUT US</NavLink>
+                    <NavLink className="btn btn-info" to="/aboutus" >ABOUT US</NavLink>
                     <Dropdown.Menu >
                         <NavLink to="/aboutus/corevalue" className="dropdown-item about-us-1"> <i className="fa fa-chevron-right"></i> Core Value </NavLink>
                         <NavLink to="aboutus/managerteam" className="dropdown-item"><i className="fa fa-chevron-right"></i> Management Team</NavLink>
