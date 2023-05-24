@@ -342,6 +342,10 @@
 
 
     @media (min-width: 401px) and (max-width: 550px) {
+      .settingshomepage .slick-slide img {
+        padding: 0 40px; 
+        /* margin-left: -30px; */
+      }
       .theme span {
         font-size: 10px;
     }
@@ -359,6 +363,29 @@
       font-size: 7.5px;
     }
   }
+  @media (min-width: 291px) and (max-width: 399px) {
+    .settingshomepage .slick-slide img {
+      padding: 0 40px; 
+      margin-left: -30px;
+     width: 190px;
+    }
+    .theme span {
+      
+      font-size: 6px;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 290px) {
+    .settingshomepage .slick-slide img {
+     width: 170px;
+    }
+    .theme span {
+      
+      font-size: 5px;
+    }
+  }
+
+  
 
   
   
