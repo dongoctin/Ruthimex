@@ -13,7 +13,7 @@
   
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .mobi-head, .mobi-head-banner, .mobi-phone {
     display: none;
   }
@@ -224,6 +224,16 @@ ul.sub-menu-aboutus li:last-child {
   height: auto;
  
 }
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .search-pic {
+    display: block;
+    height: 120px;
+   
+  }
+
+}
+
 .nav-links {
   display: flex;
   /* justify-content: space-between; */

@@ -225,6 +225,7 @@
   overflow: hidden;
   /* cho phép ẩn phần của ảnh nằm ngoài vòng tròn */
   border: 2px solid rgb(196, 190, 190);
+  max-width: 100%;
     }
 
   .home-dv-pic img {
@@ -298,6 +299,23 @@
       padding-top: 9px;
       text-align: center;
     }
+
+  
+  @media (min-width: 993px) and (max-width: 1064px) {
+    div.col-lg-4.col-md-4.col-sm-6.col-6{
+      padding-right: 0px !important;
+    }  
+  }
+
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    .settingshomepage img {
+     padding: 0 10px;
+        
+    } 
+  
+  }
+
+  
 
     /* Điều kiện cho màn hình md và lớn hơn */
     @media (min-width: 992px) { 
