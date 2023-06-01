@@ -249,7 +249,7 @@ ul.sub-menu-aboutus li:last-child {
 }
 
 .nav-links .dropdown:nth-child(4) {
-  flex-basis: 8%;
+  flex-basis: 6%;
 }
 
 .nav-links > * {
@@ -266,6 +266,10 @@ color: white;
 background-color: #5d9c27;
 height: 100%;
 
+}
+/* style={{ whiteSpace: 'normal' }} dùng để chữ khi dài hơn khung sẽ tự động xuống hàng, không tràng ra khỏi khung */
+.nav-links a {
+  white-space: normal;
 }
 
 .nav-links .btn-info:not(#news, #capacityprofile) {
@@ -293,6 +297,10 @@ border-color: white;
 
 .dropdown-item{
 border-bottom: 1px solid #CCC;
+}
+
+.nav-links .dropdown-menu {
+  width: 100%;
 }
 
 .dropdown-menu .dropdown-item {
