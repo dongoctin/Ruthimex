@@ -7,7 +7,7 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs.js';
 import CapacityProfile from './pages/CapacityProfile';
 import News from './pages/News';
-import Products from './pages/Products';
+import Products from './pages/Products/Products';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path='/capacityprofile' element={<CapacityProfile />} />
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/news' element={<News />} />
-          <Route path='/products' element={<Products />} />
+          <Route path='/products/*' element={<Products />} />
 
         </Route>
       </Routes>

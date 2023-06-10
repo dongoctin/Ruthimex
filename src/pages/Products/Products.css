@@ -1,0 +1,49 @@
+.pro-con-pic {
+    overflow: hidden;
+    width: 100%;
+    height: 170px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+      }
+
+.pro-con-pic img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+  .pro-con-pic img:hover {
+        transform: scale(1.3); 
+    }  
+  
+    .pro-con-title {
+      text-align: center;
+      padding-top: 5px;
+    }
+  
+    .pro-con-title a {
+    text-decoration: none;
+    
+    } 
+  
+    .pro-con-title span {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      color: #2a6496;
+    } 
+
+    .module-con-title-left-branch {
+        padding-top: 15px;
+
+    }
+    
+
+    @media only screen and (min-width: 768px) {
+        .col-md-3 {
+            display: inline-block;
+        }
+        
+
+    }

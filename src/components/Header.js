@@ -163,12 +163,12 @@ export default function Header() {
                 <Dropdown show={showDropdown1} onMouseEnter={handleDropdownClick1} onMouseLeave={handleDropdownClick1}>
                     <NavLink className="btn btn-info" to="/products">SẢN PHẨM</NavLink>
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1"> <i className="fa fa-chevron-right"></i>Xây dựng và khai khoán </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2"><i className="fa fa-chevron-right"></i>Ô tô - xe máy</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3"><i className="fa fa-chevron-right"></i>Điện - điện tử</Dropdown.Item>
-                        <Dropdown.Item href="#/action-4"><i className="fa fa-chevron-right"></i>Cấp thoát nước</Dropdown.Item>
-                        <Dropdown.Item href="#/action-5"><i className="fa fa-chevron-right"></i>Máy móc - thiết bị</Dropdown.Item>
-                        <Dropdown.Item href="#/action-6"><i className="fa fa-chevron-right"></i>Sản phẩm tiêu dùng</Dropdown.Item>
+                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Xây dựng và khai khoán </NavLink>
+                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Ô tô - xe máy </NavLink>
+                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Điện - điện tử </NavLink>
+                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Cấp thoát nước </NavLink>
+                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Máy móc - thiết bị </NavLink>
+                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Sản phẩm tiêu dùng </NavLink>
                     </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown show={showDropdown2} onMouseEnter={handleDropdownClick2} onMouseLeave={handleDropdownClick2}>

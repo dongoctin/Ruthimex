@@ -47,6 +47,21 @@ export const Images = {
     // history
     aboutusImage06: require('./aboutus/lichsuhinhthanh.jpg'),
 
+    //products
+    productsconImage01: require('./products/con1.jpg'),
+    productsconImage02: require('./products/con2.jpg'),
+    productsconImage03: require('./products/con3.jpg'),
+    productsconImage04: require('./products/con4.jpg'),
+    productsconImage05: require('./products/con5.jpg'),
+    productsconImage06: require('./products/con6.jpg'),
+    productsconImage07: require('./products/con7.jpg'),
+    productsconImage08: require('./products/con8.jpg'),
+    productsconImage09: require('./products/con9.jpg'),
+    productsconImage10: require('./products/con10.jpg'),
+    productsconImage11: require('./products/con11.jpg'),
+    productsconImage12: require('./products/con12.jpg'),
+
+
 
 
 
