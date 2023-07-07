@@ -43,6 +43,12 @@ export default function Header() {
         subMenu.classList.toggle('show');
 
     }
+    function handleProductClick(e) {
+        const subMenu1 = document.querySelector('.sub-menu-products');
+        e.stopPropagation(); // Ngăn chặn sự kiện click lan tỏa đến menu chính và ẩn nó
+        subMenu1.classList.toggle('show');
+
+    }
 
     let slider1Settings = {
         dots: true,
@@ -89,7 +95,30 @@ export default function Header() {
                                 </li>
                             </ul>
                         </NavLink>
-                        <NavLink to="/products" onClick={hideMenu}><i class="fa-brands fa-product-hunt"></i>SẢN PHẨM</NavLink>
+                        <NavLink to="/products" onClick={handleProductClick}><i class="fa-brands fa-product-hunt"></i>
+                            <span>SẢN PHẨM</span>
+                            <ul className='sub-menu-products'>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="/products/construction"><i class="fa-solid fa-snowflake"></i> <span>XÂY DỰNG VÀ KHAI KHOÁNG</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="/products/auto"><i class="fa-solid fa-snowflake"></i> <span>Ô TÔ - XE MÁY</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="/products/power"><i class="fa-solid fa-snowflake"></i> <span>ĐIỆN - ĐIỆN TỬ</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="/products/water"><i class="fa-solid fa-snowflake"></i> <span>CẤP THOÁT NƯỚC</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="/products/mechanical"><i class="fa-solid fa-snowflake"></i> <span>MÁY MÓC - THIẾT BỊ</span></NavLink>
+                                </li>
+                                <li>
+                                    <NavLink show={showMenu} onClick={hideMenu} to="/products/consumer"><i class="fa-solid fa-snowflake"></i> <span>SẢN PHẨM TIÊU DÙNG</span></NavLink>
+                                </li>
+
+                            </ul>
+                        </NavLink>
                         <NavLink to="/capacityprofile" onClick={hideMenu}><i class="fa-solid fa-paper-plane"></i>HỒ SƠ NĂNG LỰC</NavLink>
                         <NavLink to="/news" onClick={hideMenu}><i class="fa-regular fa-newspaper"></i>TIN TỨC</NavLink>
                         <NavLink to="/contactus" onClick={hideMenu}><i class="fa-solid fa-envelope"></i>LIÊN HỆ</NavLink>
@@ -164,11 +193,11 @@ export default function Header() {
                     <NavLink className="btn btn-info" to="/products">SẢN PHẨM</NavLink>
                     <Dropdown.Menu>
                         <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Xây dựng và khai khoán </NavLink>
-                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Ô tô - xe máy </NavLink>
-                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Điện - điện tử </NavLink>
-                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Cấp thoát nước </NavLink>
-                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Máy móc - thiết bị </NavLink>
-                        <NavLink to="products/construction" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Sản phẩm tiêu dùng </NavLink>
+                        <NavLink to="products/auto" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Ô tô - xe máy </NavLink>
+                        <NavLink to="products/power" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Điện - điện tử </NavLink>
+                        <NavLink to="products/water" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Cấp thoát nước </NavLink>
+                        <NavLink to="products/mechanical" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Máy móc - thiết bị </NavLink>
+                        <NavLink to="products/consumer" className="dropdown-item"> <i className="fa fa-chevron-right"></i>Sản phẩm tiêu dùng </NavLink>
                     </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown show={showDropdown2} onMouseEnter={handleDropdownClick2} onMouseLeave={handleDropdownClick2}>

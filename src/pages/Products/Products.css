@@ -38,6 +38,36 @@
         padding-top: 15px;
 
     }
+
+    ul.sub-menu-products {
+      background-color:  #5d9c27;
+      color: black;
+      display: none;
+    }
+    
+    ul.sub-menu-products.show {
+      display: block; /* Hiển thị danh sách khi có class "show" */
+    }
+    
+    .sub-menu-products li {
+      border-top: 1px solid rgb(175, 167, 167);
+    }
+    .sub-menu i,
+    .sub-menu span,
+    .sub-menu-products li span {
+      color: black;
+    }
+    .sub-menu-products li {
+      list-style:none;
+    }
+    
+    ul.sub-menu-products li:last-child {
+      border-bottom: none;
+    }
+    
+    
+    
+    
     
 
     @media only screen and (min-width: 768px) {
