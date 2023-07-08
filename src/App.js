@@ -4,7 +4,7 @@ import Layout from './layout/Layout';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs/AboutUs';
-import ContactUs from './pages/ContactUs.js';
+import ContactUs from './pages/ContactUs/ContactUs';
 import CapacityProfile from './pages/CapacityProfile';
 import News from './pages/News';
 import Products from './pages/Products/Products';
